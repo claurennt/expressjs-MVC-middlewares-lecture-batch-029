@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 
-//binds moviesRouter to every request at path starting with /movies
+//binds moviesRouter to every request at path starting with /api/movies
 app.use("/api/movies", moviesRouter);
 
 //binds custom error handler to every reqeust made to our app, must be the last one declared in the app-level middleware stack
